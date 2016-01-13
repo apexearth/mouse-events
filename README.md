@@ -1,4 +1,6 @@
 # mouse-events
+
+![](https://travis-ci.org/apexearth/mouse-events.svg)
 ![](http://img.shields.io/npm/v/mouse-events.svg?style=flat)
 ![](http://img.shields.io/npm/dm/mouse-events.svg?style=flat)
 ![](http://img.shields.io/npm/l/mouse-events.svg?style=flat)
