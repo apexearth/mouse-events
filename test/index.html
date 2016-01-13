@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mouse-events - User Test</title>
+    <script src="../build/module.js"></script>
+</head>
+<body style="background-color: #222">
+
+<div id="output" style="position: fixed; left: 50%; top: 20%; margin-left: -150px;
+                            width: 300px; background-color: #444;
+                            color: #ccc; font-size: 18pt; padding: 20px;">
+</div>
+
+<script type="text/javascript">
+    var mouse = window.mouseevents(document) // Default target is `document.body`
+    mouse.on("mousemove", handleMouseEvent)
+    mouse.on("mousedown", handleMouseEvent)
+    mouse.on("mouseup", handleMouseEvent)
+    mouse.on("wheel", handleMouseEvent)
+    function handleMouseEvent(e) {
+        document.getElementById("output").innerHTML = "<pre style='margin: 0'>" + e + "\n" + JSON.stringify({
+                    buttons: e.buttons,
+                    clientX: e.clientX,
+                    clientY: e.clientY,
+                    deltaY:  e.deltaY
+                }, null, 2) + "</pre>"
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+.idea
+build
+test
+.*ignore
+.travis.yml
+karma.conf.js
+Gruntfile.js
+*.tgz
