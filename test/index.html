@@ -19,6 +19,7 @@
     mouse.on("wheel", handleMouseEvent)
     function handleMouseEvent(e) {
         document.getElementById("output").innerHTML = "<pre style='margin: 0'>" + e + "\n" + JSON.stringify({
+                    button:  e.button,
                     buttons: e.buttons,
                     clientX: e.clientX,
                     clientY: e.clientY,
