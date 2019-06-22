@@ -1,6 +1,6 @@
 {
   "name": "mouse-events",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provides access to mouse events for developers using Node.js for browsers.",
   "main": "src/mouse.js",
   "directories": {
